@@ -655,7 +655,7 @@
             for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[idx[i], idx[j]] = [idx[j], idx[i]] }
             for (let i = 0; i < puC && i < idx.length; i++)bricks[idx[i]].powerUp = PUT[i % PUT.length];
             totB = bricks.length;
-            winTarget = Math.ceil(totB * 0.45);
+            winTarget = Math.ceil(totB * 0.95);
         }
 
         // ══ INIT ══
@@ -871,5 +871,6 @@
         window.addEventListener('resize', () => { if (confRun) { ccv.width = innerWidth; ccv.height = innerHeight } });
     </script>
 </body>
+
 
 </html>
